@@ -20,10 +20,9 @@ describe('Operators: ', function () {
       expect(sumOfNaturalNumbers(100)).toBe(5050);
     });
 
-    it('should use the argument supplied', function () {
-      expect(/return\s{1}.+number.+\+/.test(sumOfNaturalNumbers.toString())).toBe(true);
+    it('should return "780" for "39"', function () {
+      expect(sumOfNaturalNumbers(39).toBe(780));
     });
-
   });
 
   describe('About "modulusAndSum"', function () {
@@ -34,10 +33,6 @@ describe('Operators: ', function () {
 
     it('should return "51" for "50, 7"', function () {
       expect(modulusAndSum(50, 7)).toBe(51);
-    });
-
-    it('should use the arguments supplied', function () {
-      expect(/return\s{1}firstArg.+\+.+\%\s{1}secondArg/.test(modulusAndSum.toString())).toBe(true);
     });
 
   });
@@ -52,10 +47,6 @@ describe('Operators: ', function () {
       expect(logicalAnd(3, 4, 2)).toBe(true);
     });
 
-    it('should use the arguments supplied', function () {
-      expect(/return\s{1}firstArg.+\<.+\&\&.+\s{1}thirdArg/.test(logicalAnd.toString())).toBe(true);
-    });
-
   });
 
   describe('About "showStringLength"', function () {
@@ -66,10 +57,6 @@ describe('Operators: ', function () {
 
     it('should return "Character 13 is: l" for "Psychological Interference"', function () {
       expect(charAtHalfLength("Psychological Interference")).toEqual("Character 13 is: l");
-    });
-
-    it('should use the arguments supplied', function () {
-      expect(/string\.length/.test(charAtHalfLength.toString())).toBe(true);
     });
 
   });
