@@ -21,7 +21,7 @@ describe('Operators: ', function () {
     });
 
     it('should return "780" for "39"', function () {
-      expect(sumOfNaturalNumbers(39).toBe(780));
+      expect(sumOfNaturalNumbers(39)).toBe(780);
     });
   });
 
