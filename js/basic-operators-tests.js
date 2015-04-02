@@ -44,7 +44,7 @@ describe('Operators: ', function () {
     });
 
     it('should return "true" for "2, 4, 3"', function () {
-      expect(logicalAnd(3, 4, 2)).toBe(true);
+      expect(logicalAnd(2, 4, 3)).toBe(true);
     });
 
   });
