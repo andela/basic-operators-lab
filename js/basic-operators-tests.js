@@ -43,7 +43,7 @@ describe('Operators: ', function () {
       expect(logicalAnd(1, 2, 3)).toBe(false);
     });
 
-    it('should return "true" for "3, 4, 2"', function () {
+    it('should return "true" for "2, 4, 3"', function () {
       expect(logicalAnd(3, 4, 2)).toBe(true);
     });
 
